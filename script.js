@@ -65,15 +65,22 @@
 // }
 // console.log('Exercise 5 results:', greetuser('Sam', 'morning'))
 
-//Exercise 6
-const maxOfThree = (num1, num2, num3) => {
-  if (num1 > num2 && num1 > num3) {
-    return num1
-  } else if (num2 > num1 && num2 > num3) {
-    return num2
-  } else {
-    return num3
-  }
+// //Exercise 6
+// const maxOfThree = (num1, num2, num3) => {
+//   if (num1 > num2 && num1 > num3) {
+//     return num1
+//   } else if (num2 > num1 && num2 > num3) {
+//     return num2
+//   } else {
+//     return num3
+//   }
+// }
+
+// console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
+
+//Exercise 7
+const calculateTip = (bill, tip) => {
+  return bill % tip
 }
 
-console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
+console.log('Exercise 7 Result:', calculateTip(50, 20))
