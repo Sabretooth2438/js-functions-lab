@@ -40,9 +40,27 @@
 
 // console.log('Exercise 3 Results:', isCharAVowel('a'))
 
-//Exercise 4
-const generateEmail = (name, domain) => {
-  return `${name}@${domain}`
-}
+// //Exercise 4
+// const generateEmail = (name, domain) => {
+//   return `${name}@${domain}`
+// }
 
-console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+// console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+
+//Exercise 5
+const greetuser = (name, tod) => {
+  switch (tod) {
+    case 'morning':
+      return `Good ${tod}, ${name}!`
+      break
+    case 'afternoon':
+      return `Good ${tod}, ${name}!`
+      break
+    case 'evening':
+      return `Good ${tod}, ${name}!`
+      break
+    default:
+      return 'Invalid Time of Day'
+  }
+}
+console.log('Exercise 5 results:', greetuser('Sam', 'morning'))
