@@ -139,10 +139,10 @@
 
 //Excercise 11
 const createUsername = (fname, lname) => {
-  const firstPart = fname.slice(0, 3)
-  const lastPart = lname.slice(0, 3)
-  const charCount = fname.length + lname.length
-  return `${firstPart}${lastPart}${charCount}`
+  const fPart = fname.slice(0, 3)
+  const lPart = lname.slice(0, 3)
+  const count = fname.length + lname.length
+  return `${fPart}${lPart}${count}`
 }
 
 console.log(createUsername('Samantha', 'Green'))
