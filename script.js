@@ -85,13 +85,35 @@
 
 // console.log('Exercise 7 Result:', calculateTip(50, 20))
 
-//Exercise 8
-const converTemperature = (temp, unit) => {
-  if (unit === 'F') {
-    return `${(5 / 9) * (temp - 32)} (Celsius)`
-  } else if (unit === 'C') {
-    return `${(9 / 5) * temp + 32} (Fahrenheit)`
+// //Exercise 8
+// const converTemperature = (temp, unit) => {
+//   if (unit === 'F') {
+//     return `${(5 / 9) * (temp - 32)} (Celsius)`
+//   } else if (unit === 'C') {
+//     return `${(9 / 5) * temp + 32} (Fahrenheit)`
+//   }
+// }
+
+// console.log('Exercise 8 Result:', converTemperature(32, 'C'))
+
+//Exercise 9
+const basicCalculator = (num1, num2, ops) => {
+  switch (ops) {
+    case 'add':
+      return num1 + num2
+      break
+    case 'subtract':
+      return num1 - num2
+      break
+    case 'multiply':
+      return num1 * num2
+      break
+    case 'divide':
+      return num1 / num2
+      break
+    default:
+      return 'Invalid Operation'
   }
 }
 
-console.log('Exercise 8 Result:', converTemperature(32, 'C'))
+console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
