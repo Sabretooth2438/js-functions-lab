@@ -12,13 +12,30 @@
 
 // console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9))
 
-//Example 2
-const isAdult = (number) => {
-  if (number > 18) {
-    return 'Adult'
+// //Example 2
+// const isAdult = (number) => {
+//   if (number > 18) {
+//     return 'Adult'
+//   } else {
+//     return 'Minor'
+//   }
+// }
+
+// console.log('Exercise 2 Result:', isAdult(21))
+
+//Example 3
+const isCharAVowel = (char) => {
+  if (
+    char === 'a' ||
+    char === 'e' ||
+    char === 'i' ||
+    char === 'o' ||
+    char === 'u'
+  ) {
+    return true
   } else {
-    return 'Minor'
+    return false
   }
 }
 
-console.log('Exercise 2 Result:', isAdult(21))
+console.log('Exercise 3 Results:', isCharAVowel('a'))
