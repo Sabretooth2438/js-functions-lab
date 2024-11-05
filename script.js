@@ -23,19 +23,26 @@
 
 // console.log('Exercise 2 Result:', isAdult(21))
 
-//Example 3
-const isCharAVowel = (char) => {
-  if (
-    char === 'a' ||
-    char === 'e' ||
-    char === 'i' ||
-    char === 'o' ||
-    char === 'u'
-  ) {
-    return true
-  } else {
-    return false
-  }
+// //Example 3
+// const isCharAVowel = (char) => {
+//   if (
+//     char === 'a' ||
+//     char === 'e' ||
+//     char === 'i' ||
+//     char === 'o' ||
+//     char === 'u'
+//   ) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+
+// console.log('Exercise 3 Results:', isCharAVowel('a'))
+
+//Exercise 4
+const generateEmail = (name, domain) => {
+  return `${name}@${domain}`
 }
 
-console.log('Exercise 3 Results:', isCharAVowel('a'))
+console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
