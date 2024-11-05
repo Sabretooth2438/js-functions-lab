@@ -78,9 +78,20 @@
 
 // console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
 
-//Exercise 7
-const calculateTip = (bill, tip) => {
-  return bill * (tip / 100)
+// //Exercise 7
+// const calculateTip = (bill, tip) => {
+//   return bill * (tip / 100)
+// }
+
+// console.log('Exercise 7 Result:', calculateTip(50, 20))
+
+//Exercise 8
+const converTemperature = (temp, unit) => {
+  if (unit === 'F') {
+    return `${(5 / 9) * (temp - 32)} (Celsius)`
+  } else if (unit === 'C') {
+    return `${(9 / 5) * temp + 32} (Fahrenheit)`
+  }
 }
 
-console.log('Exercise 7 Result:', calculateTip(50, 20))
+console.log('Exercise 8 Result:', converTemperature(32, 'C'))
