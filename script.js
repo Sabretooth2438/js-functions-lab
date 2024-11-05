@@ -80,7 +80,7 @@
 
 //Exercise 7
 const calculateTip = (bill, tip) => {
-  return bill % tip
+  return bill * (tip / 100)
 }
 
 console.log('Exercise 7 Result:', calculateTip(50, 20))
