@@ -96,24 +96,43 @@
 
 // console.log('Exercise 8 Result:', converTemperature(32, 'C'))
 
-//Exercise 9
-const basicCalculator = (num1, num2, ops) => {
-  switch (ops) {
-    case 'add':
-      return num1 + num2
-      break
-    case 'subtract':
-      return num1 - num2
-      break
-    case 'multiply':
-      return num1 * num2
-      break
-    case 'divide':
-      return num1 / num2
-      break
-    default:
-      return 'Invalid Operation'
+// //Exercise 9
+// const basicCalculator = (num1, num2, ops) => {
+//   switch (ops) {
+//     case 'add':
+//       return num1 + num2
+//       break
+//     case 'subtract':
+//       return num1 - num2
+//       break
+//     case 'multiply':
+//       return num1 * num2
+//       break
+//     case 'divide':
+//       return num1 / num2
+//       break
+//     default:
+//       return 'Invalid Operation'
+//   }
+// }
+
+// console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
+
+//Level Up
+
+//Exercise 10
+const calculateGrade = (grade) => {
+  if (grade >= 90) {
+    return 'A'
+  } else if (grade >= 80) {
+    return 'B'
+  } else if (grade >= 70) {
+    return 'C'
+  } else if (grade >= 60) {
+    return 'D'
+  } else {
+    return 'F'
   }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
+console.log('Exercise 10 Result:', calculateGrade(85))
