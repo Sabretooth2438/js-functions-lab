@@ -47,20 +47,33 @@
 
 // console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
 
-//Exercise 5
-const greetuser = (name, tod) => {
-  switch (tod) {
-    case 'morning':
-      return `Good ${tod}, ${name}!`
-      break
-    case 'afternoon':
-      return `Good ${tod}, ${name}!`
-      break
-    case 'evening':
-      return `Good ${tod}, ${name}!`
-      break
-    default:
-      return 'Invalid Time of Day'
+// //Exercise 5
+// const greetuser = (name, tod) => {
+//   switch (tod) {
+//     case 'morning':
+//       return `Good ${tod}, ${name}!`
+//       break
+//     case 'afternoon':
+//       return `Good ${tod}, ${name}!`
+//       break
+//     case 'evening':
+//       return `Good ${tod}, ${name}!`
+//       break
+//     default:
+//       return 'Invalid Time of Day'
+//   }
+// }
+// console.log('Exercise 5 results:', greetuser('Sam', 'morning'))
+
+//Exercise 6
+const maxOfThree = (num1, num2, num3) => {
+  if (num1 > num2 && num1 > num3) {
+    return num1
+  } else if (num2 > num1 && num2 > num3) {
+    return num2
+  } else {
+    return num3
   }
 }
-console.log('Exercise 5 results:', greetuser('Sam', 'morning'))
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
