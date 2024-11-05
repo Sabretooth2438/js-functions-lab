@@ -137,7 +137,7 @@ const calculateGrade = (grade) => {
 
 console.log('Exercise 10 Result:', calculateGrade(85))
 
-//Excercise 11
+//Excercise 11 (searched online)
 const createUsername = (fname, lname) => {
   const fPart = fname.slice(0, 3)
   const lPart = lname.slice(0, 3)
@@ -146,3 +146,8 @@ const createUsername = (fname, lname) => {
 }
 
 console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
+
+//Exercise 12 (searched online)
+const numArgs = (...argument) => argument.length
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
