@@ -120,19 +120,29 @@
 
 //Level Up
 
-//Exercise 10
-const calculateGrade = (grade) => {
-  if (grade >= 90) {
-    return 'A'
-  } else if (grade >= 80) {
-    return 'B'
-  } else if (grade >= 70) {
-    return 'C'
-  } else if (grade >= 60) {
-    return 'D'
-  } else {
-    return 'F'
-  }
+// //Exercise 10
+// const calculateGrade = (grade) => {
+//   if (grade >= 90) {
+//     return 'A'
+//   } else if (grade >= 80) {
+//     return 'B'
+//   } else if (grade >= 70) {
+//     return 'C'
+//   } else if (grade >= 60) {
+//     return 'D'
+//   } else {
+//     return 'F'
+//   }
+// }
+
+// console.log('Exercise 10 Result:', calculateGrade(85))
+
+//Excercise 11
+const createUsername = (fname, lname) => {
+  const firstPart = fname.slice(0, 3)
+  const lastPart = lname.slice(0, 3)
+  const charCount = fname.length + lname.length
+  return `${firstPart}${lastPart}${charCount}`
 }
 
-console.log('Exercise 10 Result:', calculateGrade(85))
+console.log(createUsername('Samantha', 'Green'))
