@@ -148,6 +148,8 @@ const createUsername = (fname, lname) => {
 console.log('Exercise 11 Result:', createUsername('Samantha', 'Green'))
 
 //Exercise 12 (searched online)
-const numArgs = (...argument) => argument.length
+const numArgs = (...argument) => {
+  return argument.length
+}
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4))
